@@ -14,14 +14,14 @@ html, body{
 
 #img1{
     position: absolute;
-    top: -700px;
-    left: -400px;
+    top: -100vh;
+    left: -30vw;
 }
 
 #img2{
     position: absolute;
-    top: 300px;
-    right: -400px;
+    top: 40vh;
+    right: -30vw;
 }
 
 .main-box{
@@ -51,6 +51,7 @@ html, body{
 }
 
 .name{
+    font-size: 100%;
     text-align: center;
     position: relative;
     top: -5vh;
@@ -69,12 +70,12 @@ hr{
     justify-content: space-around;
     text-align: center;
     padding: 5% 5% 10% 5%;
-    font-size: 70%;
+    font-size: 80%;
     letter-spacing: 0.1vw;
 }
 
 .special{
-    font-size: 1.4vw;
+    font-size: 120%;
     font-weight: 700;
     color: black;
 }
@@ -86,4 +87,72 @@ hr{
     right: 0px;
     text-align: center;
     font-size: 1vw;
+}
+
+@media screen and (min-width: 2560px) {
+    .name{
+        font-size: 200%;
+    }
+
+    .bottom{
+        font-size: 170%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #img1{
+        top: -70vh;
+    }
+
+    .main-box{
+        width: 50%;
+        margin: 10% 25% 10% 25%;
+    }
+
+    #img4{
+        left: 18vw;
+    }
+
+    .attribution{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #img1{
+        top: -10vh;
+    }
+    
+    #img2{
+        top: 60vh
+    }
+
+    .main-box{
+        margin: 30% 25% 30% 25%;
+    }
+
+    #img4{
+        width: 35%;
+        top: -6vh;
+        left: 15vw;
+    }
+
+    .name{
+        top: -3vh;
+    }
+
+    .attribution{
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .main-box{
+        width: 70vw;
+        margin: 30% 15% 30% 15%;
+    }
+
+    #img4{
+        left: 22vw;
+    }
 }
