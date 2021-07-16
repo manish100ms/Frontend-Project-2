@@ -46,9 +46,15 @@ html, body{
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     position: absolute;
-    margin: 10% 37.5% 15% 37.5%;
+    margin: 5% 37.5% 15% 37.5%;
     width: 25%;
     color: rgb(73, 73, 73);
+    animation: appear 2s linear;
+}
+
+@keyframes appear{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 #img3{
@@ -59,18 +65,18 @@ html, body{
 #img4{
     position: relative;
     width: 25%;
-    left: 8.5vw;
+    left: 37.5%;
     top: -8vh;
     border-radius: 50%;
     padding: 1%;
     background-color: rgb(255, 255, 255);
-    transition: all 1s;
+    transition: all 2s;
 }
 
 #img4:hover{
     width: 35%;
     padding: 2%;
-    left: 7vw;
+    left: 32.5%;
     top: -10vh;
 }
 
@@ -85,11 +91,6 @@ html, body{
 
 .name:hover{
     font-size: 120%;
-}
-
-hr{
-    position: relative;
-    top: -2vh;
 }
 
 
@@ -185,4 +186,9 @@ hr{
     #img4{
         left: 22vw;
     }
+}
+
+.navbar{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
