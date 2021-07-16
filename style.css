@@ -14,7 +14,7 @@ html, body{
 
 #img1{
     position: absolute;
-    top: -100vh;
+    top: -100%;
     left: -30vw;
     animation: floating-top 20s;
     animation-iteration-count: infinite;
@@ -22,22 +22,22 @@ html, body{
 
 #img2{
     position: absolute;
-    top: 40vh;
+    top: 40%;
     right: -30vw;
     animation: floating-bottom 20s;
     animation-iteration-count: infinite;
 }
 
 @keyframes floating-top{
-    0%{top: -100vh;}
-    50%{top: 0vh;}
-    100%{top: -100vh;}
+    0%{top: -100%;}
+    50%{top: 0%;}
+    100%{top: -100%;}
 }
 
 @keyframes floating-bottom{
-    0%{top: 40vh;}
-    50%{top: -60vh;}
-    100%{top: 40vh;}
+    0%{top: 40%;}
+    50%{top: -60%;}
+    100%{top: 40%;}
 }
 
 .main-box{
